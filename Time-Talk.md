@@ -4,11 +4,11 @@
 
 ## 1. 프로젝트 개요
 
-- 프로젝트명: 타임레터 (TimeLetter)
-- 팀명: (작성 필요)
-- 팀원: (작성 필요)
+- 프로젝트명: 타임톡(Time Talk)
+- 팀명: T.T.
+- 팀원: 박은혜
 - 작성일: 2026.03.29
-- 프로젝트 기간: 2026.04.01 ~ 2026.05.15
+- 프로젝트 기간: 2026.03.29~
 - 기술 스택: Next.js / React / TypeScript / Tailwind CSS / React Query
 - 배포 환경: Vercel
 - GitHub 레포: https://github.com/g0ngw0n/260329_Time-Talk
@@ -97,7 +97,7 @@
 
 ## 3. 페이지 구조
 
-### 3-1. 사이트맵 - 1
+### 3-1. 사이트맵
 
 - /
   - /write
@@ -185,36 +185,29 @@ interface Message {
 ---
 
 ##7. 상태 관리 계획
-상태 종류
-관리 방식
-설명
-클라이언트 상태
-useState / Zustand
-메시지 상태
-폼 상태
-React Hook Form
-입력 관리
-UI 상태
-useState
-모달, 로딩 상태
+- 상태 종류       관리 방식            설명
+- 클라이언트 상태 useState / Zustand   메시지 상태
+- 폼 상태        React Hook Form     입력 관리
+- UI 상태        useState            모달, 로딩 상태
 
 ---
 
 ##8. 프로젝트 일정
-주차 기간 마일스톤      산출물
-1주차     기획          요구사항 정의서, 와이어프레임
-2주차     기본 UI 구현  페이지 구조
-3주차     P0 기능 구현  작성/저장
-4주차     P1 기능 구현  타임라인
-5주차     테스트        버그 수정
-6주차     배포          배포 URL, 발표 자료
+- 주차 기간 마일스톤      산출물
+- 1주차     기획         요구사항 정의서, 와이어프레임
+- 2주차     기본 UI 구현  페이지 구조
+- 3주차     P0 기능 구현  작성/저장
+- 4주차     P1 기능 구현  타임라인
+- 5주차     테스트        버그 수정
+- 6주차     배포          배포 URL, 발표 자료
 
 ##9. 컨벤션
+
 ###9.1. 브랜치 전략
-main ← develop ← feature/*
+- main ← develop ← feature/*
 
 ###9.2. 커밋 컨벤션
-feat / fix / docs / style / refactor
+- feat / fix / docs / style / refactor
 
 ##10. 참고 자료
 - 벤치마킹 서비스: Notion, Apple Journal
