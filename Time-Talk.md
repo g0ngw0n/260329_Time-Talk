@@ -100,9 +100,22 @@
 ### 3-1. 사이트맵
 
 - /
-  - /write
+  - write
   - /timeline
   - /settings
+
+
+
+- / (홈)
+- ├── /login page
+- ├── /signup page
+- ├── /writing page
+- │   
+- │   ├── /timetable/[id]        (시간표 상세)
+- │   └── /timetable/[id]/edit   (시간표 수정)
+- ├── /compare                    (공강 비교)
+- ├── /profile                    (내 정보)
+- └── 
 
 ---
 
