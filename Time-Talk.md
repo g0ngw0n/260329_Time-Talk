@@ -106,7 +106,7 @@
 
 
 
-- / (홈)
+- / home
 - ├── /login page
 - ├── /signup page
 - ├── /writing page
@@ -165,7 +165,7 @@
 - 성능: LCP 2.5초 이하 목표
 - 접근성: 키보드 네비게이션 및 aria 적용
 - SEO: 기본 메타태그 적용
-- 다크모드: 지원
+- 다크모드: 미지원
 
 ---
 
@@ -225,3 +225,5 @@ interface Message {
 ##10. 참고 자료
 - 벤치마킹 서비스: Notion, Apple Journal
 - 디자인 레퍼런스: Dribbble, Pinterest
+
+
