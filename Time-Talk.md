@@ -11,7 +11,9 @@
 - 프로젝트 기간: 2026.04.01 ~ 2026.05.15
 - 기술 스택: Next.js / React / TypeScript / Tailwind CSS / React Query
 - 배포 환경: Vercel
-- GitHub 레포: https://github.com/your-id/timeletter (예정)
+- GitHub 레포: https://github.com/g0ngw0n/260329_Time-Talk
+
+---
 
 ### 1-1. 프로젝트 목적
 
@@ -154,11 +156,17 @@
 
 ---
 
-## 6. 데이터 및 상태 관리
 
-### 데이터 모델
 
-```ts
+##6. 데이터 및 API
+
+###6.1. 데이터 처리 방식
+- localStorage를 활용한 데이터 저장
+- React Query를 사용한 상태 캐싱 (선택)
+
+---
+
+###6.2. 주요 데이터 모델
 interface Message {
   id: string;
   date: string;
@@ -166,25 +174,17 @@ interface Message {
   createdAt: string;
 }
 
+---
 
-6. 데이터 및 API
+###6.3. 동작 방식
+- 앱 로드시 localStorage에서 메시지 불러오기
+- 날짜 기준으로 필터링 후 화면 표시
+- 저장/삭제 시 즉시 UI 반영
+  
 
-6.1. 데이터 처리 방식
-localStorage를 활용한 데이터 저장
-React Query를 사용한 상태 캐싱 (선택)
-6.2. 주요 데이터 모델
-interface Message {
-  id: string;
-  date: string;
-  content: string;
-  createdAt: string;
-}
-6.3. 동작 방식
-앱 로드시 localStorage에서 메시지 불러오기
-날짜 기준으로 필터링 후 화면 표시
-저장/삭제 시 즉시 UI 반영
+---
 
-7. 상태 관리 계획
+##7. 상태 관리 계획
 상태 종류
 관리 방식
 설명
@@ -198,49 +198,24 @@ UI 상태
 useState
 모달, 로딩 상태
 
-8. 프로젝트 일정
-주차
-기간
-마일스톤
-산출물
-1주차
+---
 
+##8. 프로젝트 일정
+주차 기간 마일스톤      산출물
+1주차     기획          요구사항 정의서, 와이어프레임
+2주차     기본 UI 구현  페이지 구조
+3주차     P0 기능 구현  작성/저장
+4주차     P1 기능 구현  타임라인
+5주차     테스트        버그 수정
+6주차     배포          배포 URL, 발표 자료
 
-기획
-요구사항 정의서, 와이어프레임
-2주차
-
-
-기본 UI 구현
-페이지 구조
-3주차
-
-
-P0 기능 구현
-작성/저장
-4주차
-
-
-P1 기능 구현
-타임라인
-5주차
-
-
-테스트
-버그 수정
-6주차
-
-
-배포
-배포 URL, 발표 자료
-
-9. 컨벤션
-9.1. 브랜치 전략
+##9. 컨벤션
+###9.1. 브랜치 전략
 main ← develop ← feature/*
 
-9.2. 커밋 컨벤션
+###9.2. 커밋 컨벤션
 feat / fix / docs / style / refactor
 
-10. 참고 자료
-벤치마킹 서비스: Notion, Apple Journal
-디자인 레퍼런스: Dribbble, Pinterest
+##10. 참고 자료
+- 벤치마킹 서비스: Notion, Apple Journal
+- 디자인 레퍼런스: Dribbble, Pinterest
