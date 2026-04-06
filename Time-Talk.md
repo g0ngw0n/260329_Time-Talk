@@ -106,16 +106,12 @@
 
 
 
-- / home
+- / home(카톡 창처럼 메세지 표시)
 - ├── /login page
 - ├── /signup page
 - ├── /writing page
-- │   
-- │   ├── /timetable/[id]        (시간표 상세)
-- │   └── /timetable/[id]/edit   (시간표 수정)
-- ├── /compare                    (공강 비교)
-- ├── /profile                    (내 정보)
-- └── 
+- │              
+- └── /profile(내 정보)
 
 ---
 
@@ -171,15 +167,15 @@
 
 
 
-##6. 데이터 및 API
+## 6. 데이터 및 API
 
-###6.1. 데이터 처리 방식
+### 6.1. 데이터 처리 방식
 - localStorage를 활용한 데이터 저장
 - React Query를 사용한 상태 캐싱 (선택)
 
 ---
 
-###6.2. 주요 데이터 모델
+### 6.2. 주요 데이터 모델
 interface Message {
   id: string;
   date: string;
@@ -189,7 +185,7 @@ interface Message {
 
 ---
 
-###6.3. 동작 방식
+### 6.3. 동작 방식
 - 앱 로드시 localStorage에서 메시지 불러오기
 - 날짜 기준으로 필터링 후 화면 표시
 - 저장/삭제 시 즉시 UI 반영
@@ -197,7 +193,7 @@ interface Message {
 
 ---
 
-##7. 상태 관리 계획
+## 7. 상태 관리 계획
 - 상태 종류       관리 방식            설명
 - 클라이언트 상태 useState / Zustand   메시지 상태
 - 폼 상태        React Hook Form     입력 관리
@@ -205,7 +201,7 @@ interface Message {
 
 ---
 
-##8. 프로젝트 일정
+## 8. 프로젝트 일정
 - 주차 기간 마일스톤      산출물
 - 1주차     기획         요구사항 정의서, 와이어프레임
 - 2주차     기본 UI 구현  페이지 구조
@@ -214,16 +210,15 @@ interface Message {
 - 5주차     테스트        버그 수정
 - 6주차     배포          배포 URL, 발표 자료
 
-##9. 컨벤션
+## 9. 컨벤션
 
-###9.1. 브랜치 전략
+### 9.1. 브랜치 전략
 - main ← develop ← feature/*
 
-###9.2. 커밋 컨벤션
+### 9.2. 커밋 컨벤션
 - feat / fix / docs / style / refactor
 
-##10. 참고 자료
+## 10. 참고 자료
 - 벤치마킹 서비스: Notion, Apple Journal
 - 디자인 레퍼런스: Dribbble, Pinterest
-
 
